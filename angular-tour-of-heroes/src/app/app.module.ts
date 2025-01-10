@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [
         AppComponent, // Declare components
         HeroesComponent, // Declare components
         HeroDetailComponent,
-        MessagesComponent
+        MessagesComponent,
+        DashboardComponent,
     ],
     imports: [
         BrowserModule,
         CommonModule,
-        FormsModule, // Import FormsModule here
+        FormsModule,
+        AppRoutingModule, // Import FormsModule here
     ],
     providers: [],
     bootstrap: [AppComponent],
