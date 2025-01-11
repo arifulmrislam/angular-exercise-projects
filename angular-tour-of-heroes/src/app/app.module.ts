@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
         CommonModule,
         FormsModule,
         AppRoutingModule, // Import FormsModule here
+        RouterModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
